@@ -1,3 +1,11 @@
+namespace TE {
+    export class Engine {
+        public constructor() {
+            console.log("tEngine FTW?????")
+        }
+    }
+}
+
 window.onload = function() {
-    document.body.innerHTML += "tEngine FTW"
+    let engine = new TE.Engine
 }
