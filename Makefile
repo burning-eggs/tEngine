@@ -4,7 +4,7 @@ COMPILER = tsc
 SRC = $(wildcard ts/*.ts)
 
 build:
-	$(COMPILER) $(SRC)
+	$(COMPILER)
 
 clean:
-	rm -rf ts/*.js
+	rm -rf *.js
