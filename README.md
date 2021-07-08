@@ -12,5 +12,3 @@ You can build tEngine with the makefile:
 ```bash
 $ make
 ```
-
-## **{ Dependencies for tEngine }**
