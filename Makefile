@@ -7,4 +7,4 @@ build:
 	$(COMPILER)
 
 clean:
-	rm -rf *.js
+	rm -rf *.js *.js.map
