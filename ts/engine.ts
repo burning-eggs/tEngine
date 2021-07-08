@@ -4,7 +4,7 @@ namespace TE {
      * Main engine class.
      */
     export class Engine {
-        private _count: number = 0
+        private _canvas: HTMLCanvasElement
 
         /**
          * Creates a new engine.
@@ -17,7 +17,9 @@ namespace TE {
          * Starts up the engine.
          */
         public start(): void {
-            GLUtilities.initialize();
+            this._canvas = GLUtilities.initialize();
+
+            gl.clearColor(0, 0, 0, 1)
 
             this.loop()
         }
@@ -26,9 +28,7 @@ namespace TE {
          * Main loop for the engine.
          */
         private loop(): void {
-            this._count++;
-
-            document.title = this._count.toString()
+            gl.clear(gl.COLOR_BUFFER_BIT)
 
             requestAnimationFrame(this.loop.bind(this))
         }
