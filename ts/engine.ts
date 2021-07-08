@@ -17,6 +17,8 @@ namespace TE {
          * Starts up the engine.
          */
         public start(): void {
+            GLUtilities.initialize();
+
             this.loop()
         }
 
