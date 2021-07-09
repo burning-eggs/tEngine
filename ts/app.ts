@@ -1,7 +1,13 @@
 // Main entry point for the application
 
+var engine: TE.Engine
+
 window.onload = function() {
-    let engine = new TE.Engine()
+    engine = new TE.Engine()
 
     engine.start()
+}
+
+window.onresize = function() {
+    engine.resize()
 }
