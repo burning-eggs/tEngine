@@ -11,7 +11,6 @@ namespace TE {
         /**
          * Initializes WebGL, potentially using the canvas with an assigned ID if it is defined.
          * @param elementId The ID of the element to search for
-         * @returns
          */
         public static initialize(elementId?: string): HTMLCanvasElement {
             let canvas: HTMLCanvasElement
